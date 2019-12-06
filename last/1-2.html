@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+      #gallery{
+        width:950px;
+        height:500px;
+        background:#ff0;
+        border:2px solid black;
+        border-radius:15px;
+      }
+      ul{
+        list-style:none;
+      }
+      ul li{
+        display: inline;
+        float:left;
+        padding:10px;
+      }
+      .bigpic{
+        position: absolute;
+        display:none;
+        left:100px;
+        width:300px;
+      }
+      .samllpic{
+        border:2px dotted red;
+        width:200px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <script>
+      //4-7번 슬라이드
+      $(document).ready(function(){
+        $("#s1").click(function(){
+          $("#big1").fadeIn(1000);
+        });
+        $("#big1").click(function(){
+          $("#big1").fadeOut(1000);
+        });
+
+        $("#s2").click(function(){
+          $("#big2").fadeIn(1000);
+        });
+        $("#big2").click(function(){
+          $("#big2").fadeOut(1000);
+        });
+
+        $("#s3").click(function(){
+          $("#big3").fadeIn(1000);
+        });
+        $("#big3").click(function(){
+          $("#big3").fadeOut(1000);
+        });
+      });
+    </script>
+    <h1>사용법</h1>
+    <div id="gallery">
+      <ul>
+        <li>
+          <img src="dog1.jpg" id="s1" class="samllpic">
+          <img src="dog2.jpg" id="big1" class="bigpic">
+        </li>
+
+        <li>
+          <img src="dog3.jpg" id="s2" class="samllpic">
+          <img src="dog4.jpg" id="big2" class="bigpic">
+        </li>
+
+        <li>
+          <img src="dog5.jpg" id="s3" class="samllpic">
+          <img src="dog6.jpg" id="big3" class="bigpic">
+        </li>
+      </ul>
+    </div>
+
+
+
+
+  </body>
+</html>

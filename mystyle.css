@@ -1,0 +1,99 @@
+header {
+  height : 40px;
+  margin : 10px;
+}
+
+nav{
+  align-items: center;
+  width:90%;
+  margin:10px;
+
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgb(248,82,114);
+}
+
+nav ul{
+  list-style: none;
+  text-align:center;
+  border-top:2px solid red;
+  border-bottom:2px solid red;
+  padding: 10px 0;
+}
+
+nav ul li{
+  display : inline; /*default는 block*/
+  text-transform: uppercase;
+  padding: 0 30px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+nav ul li a {
+  text_decoration: none;
+  color : white;
+
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color : rgb(240,96,160);
+}
+
+aside#left{
+  width: 200px;
+  float: left;
+}
+#left ul{
+  color:#fff;
+  list-style: none;
+  text-indent: 15px;
+}
+#left h3{
+  margin-left: 50px;
+  margin-bottom: 0px;
+  background:rgb(192,39,185);
+}
+#left ul li{
+  background: rgb(243,177,219);
+  line-height: 30px;/*left위아래 조정*/
+  font-size:15px;
+}
+
+
+#left ul li a{
+  text-decoration: none;
+  color:#fff;
+  display:block;
+}
+#left ul li a:hover{
+  background:rgb(146,7,131);
+}
+#main{
+  position: fixed;
+  margin-left: 230px;
+
+  color:#444;
+  overflow:hidden;
+  float:left;
+  width:90vh;
+  height:80vh;
+}
+
+iframe{
+  width: 85vh;
+  height: 75vh;
+  border-width: 0px;
+}
+body{
+  background-image: url("funfactory.png");
+  background-repeat: no-repeat;
+  background-size: 3500px 2350px;
+
+
+}

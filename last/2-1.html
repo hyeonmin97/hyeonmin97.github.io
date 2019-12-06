@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+      .big{
+        display:none;
+        width: 300px;
+        height: 450px;
+      }
+      input{
+        width:150px;
+        height: 30px;
+        border:1px solid #ccc;
+        margin:10px 15px;
+      }
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //13슬라이드 테이블로 만들기
+      //소스코드는 ppt에 없다!
+      //함수들을 잘 알아두라 선언
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("#big1").slideToggle(1000);
+        });
+        $("#btn2").click(function(){
+          $("#big2").slideToggle(1000);
+        });
+      });
+
+
+    </script>
+    <table border="1" cellspacing=0>
+      <tr>
+        <td><img src="dog1.jpg"></td>
+        <td><img src="dog2.jpg"></td>
+      </tr>
+      <tr>
+        <td><input id="btn1" value="큰 이미지로 보기/닫기"></td>
+        <td><input id="btn2" value="큰 이미지로 보기/닫기"></td>
+      </tr>
+      <tr>
+        <td><img src="dog1.jpg" id="big1" class="big"></td>
+        <td><img src="dog2.jpg" id="big2" class="big"></td>
+      </tr>
+    </table>
+  </body>
+</html>

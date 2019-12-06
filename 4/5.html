@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #div{
+        display:none;
+      }
+    </style>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="album.css">
+  <body>
+
+    <script>
+      $(document).ready(function(){
+        $("h3").click(function(){
+          $("#div").show();
+        });
+      });
+    </script>
+    <h3 style="text-align:center">이 글을 클릭하면 설명 나타나게하기</h3>
+      <div id="div">
+        <div>
+          <img src="fun.jpg" width="500px" id="img">
+        </div>
+
+				<div class="discript">
+          2019. 6. 4.<br><br>
+          더욱 완성도 높은 음악과 퍼포먼스로 돌아온 프로미스나인의 첫 번째 싱글 앨범 [FUN FACTORY]는 타이틀곡 명 ‘FUN!’에 걸맞게 “지루한 일상을 벗어나 우리끼리 즐겁게 놀자! 우리의 모든 것이 유쾌하고 재미있을거야”라는 메시지가 담겨있으며 프로미스나인만의 맑고 상쾌한 에너지로 올 여름 청량한 힐링을 선사한다.
+					</div>
+					<ol>
+						<li class="title">
+							<span>01</span>
+							FUN!
+							<hr>
+						</li>
+						<li>
+							<span>02</span>
+							LOVE RUMPUMPUM
+							<hr>
+						</li>
+						<li>
+							<span>03</span>
+							FLY HIGH
+							<hr>
+						</li>
+					</ol>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="album.css">
+  <body>
+    <script>
+      $(document).ready(function(){
+        $("#img").click(function(){
+          $(this).animate({marginLeft:"+=300px"},"slow");
+          $(this).animate({marginLeft:"-=300px"},"slow")
+        });
+      });
+    </script>
+    <h3 style="text-align:center">이미지를 클릭하면 이미지 이동</h3>
+      <div id="div">
+        <div>
+          <img src="love.jpg" width="500px" id="img">
+        </div>
+
+				<div class="discript">
+          2018. 10. 10.<br><br>
+          프로미스나인, 즐겁고 특별한 파티로의 초대…스페셜 싱글 앨범 [From.9] 발매!<br />
+						프로미스나인, 스페셜 싱글 [From.9] 발매…9개월 만의 완전체 컴백 확정!<br />
+						프로미스나인, 보기만 해도 기분 좋은 ‘프톤치드돌’로 변신…타이틀곡 ‘LOVE BOMB’ 컴백!
+					</div>
+					<ol>
+						<li class="title">
+							<span>01</span>
+							LOVE BOMB
+							<hr>
+						</li>
+						<li>
+							<span>02</span>
+							DANCING QUEEN
+							<hr>
+						</li>
+						<li>
+							<span>03</span>
+							물들어
+						  <hr>
+          	</li>
+						<li>
+							<span>04</span>
+							두근두근 (DKDK) (From.9 Ver.) (CD Only)
+							<hr>
+						</li>
+						<li>
+							<span>05</span>
+							22세기 소녀 (From.9 Ver.) (CD Only)
+							<hr>
+						</li>
+					</ol>
+        </div>
+
+  </body>
+</html>

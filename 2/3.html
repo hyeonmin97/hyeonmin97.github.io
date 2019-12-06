@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title></title>
+    <style media="screen">
+      .class1{
+        color:white;
+        font-weight:bold;
+
+      }
+      .class2{
+        font-style:italic;
+        color:blue;
+      }
+      div{
+
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:30px;
+
+      }
+      body > div{
+        text-align:center;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $("input").click(function(){
+          $("#div").removeClass();
+          $("span").removeClass();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="button" value="removeClass" id="add">
+    </div>
+    <div id="div" class="class1">
+      <span class="class2">아이돌학교</span> 마지막 방송에서 fromis_로 결정되었다가 2017년 11월 23일 fromis_의 방 종영 직후 엠넷과 티저에서 그룹명이 fromis_(프로미스)가 아닌 fromis_9(프로미스 나인)으로 언급되면서 팬들 사이에서 혼란이 있었다. 그리고 다음날인 11월 24일 보도 자료를 통해 팀명 변경 확정이 알려졌다. 여전히 그냥 프로미스라고 부르는 사람들도 많고, 그룹명에 밑줄이 들어가 있어 "프로미스 언더스코어 나인"이라고 읽는 외국인도 많다.<br><br>
+
+
+      팀명을 줄여 부르는 이름이 굉장히 많은 편인데, 애칭으로 부를 때에는 '프롬이'나 '프로미'라고 부른다. 또한 뒤에 붙은 나인을 떼고 원래 이름이었던 '프로미스'라고 부르기도 하며, 팀명을 한 글자로 줄여서 '픎'이라는 단어를 쓰기도 한다. 인터넷 상에서는 팀 이름을 '프나', '프미나'라고 줄여서 부르는 편이다.<br><br>
+
+      그룹 이름의 뜻은 <span class="class2">아이돌학교</span>에서 왔다의 줄임말이자 팬들에게 최고의 걸그룹이 되겠다는다는 약속을 담은 것이며, 뒤에 붙은 9는 그룹의 멤버가 9명임을 의미한다.
+
+    </div>
+  </body>
+</html>

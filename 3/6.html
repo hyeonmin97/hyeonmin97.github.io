@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>이서연</title>
+    <link rel="stylesheet" href="3.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <style media="screen">
+    body{
+      text-align: center;
+    }
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("tr").click(function(){
+        $(this).hide();
+
+      });
+
+    });
+    </script>
+    <h2>행 클릭시 행 삭제</h2>
+    <table width="60%" >
+
+      <tr>
+        <th colspan="2">이서연 / 李瑞淵 / Lee Seoyeon</th>
+      </tr>
+      <tr>
+        <td colspan="2"><img src="seoyeon.jpg"></td>
+      </tr>
+      <tr>
+        <td class="left" rowspan="2">출생</td>
+        <td>2000년 1월 22일</td>
+      </tr>
+      <tr>
+        <td>서울특별시 양천구 목동</td>
+      </tr>
+      <tr>
+        <td class="left">국적</td>
+        <td>대한민국</td>
+      </tr>
+      <tr>
+        <td class="left">신체</td>
+        <td>158cm, 47kg, A형</td>
+      </tr>
+      <tr>
+        <td class="left">소속사</td>
+        <td>오프더레코드 엔터테인먼트</td>
+      </tr>
+      <tr>
+        <td class="left">소속 그룹</td>
+        <td>fromis_9</td>
+      </tr>
+    </table>
+
+  </body>
+</html>

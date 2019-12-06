@@ -1,0 +1,34 @@
+th{
+  font-weight: bold;
+  color:white;
+  align:center;
+  background-color: rgb(141,124,178);
+  font-size: 1.3em;
+}
+table{
+  border:3px solid;
+  border-color: rgb(141,124,178);
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+img{
+  width:100%;
+}
+
+tr{
+    border:1px solid;
+    border-color:white;
+}
+td{
+  border:1px solid;
+  border-color:white;
+  padding:5px 5px 5px 5px;
+}
+.left{
+  text-align: center;
+  background-color: rgb(141,124,178);
+  color: white;
+  font-weight: bold;
+}

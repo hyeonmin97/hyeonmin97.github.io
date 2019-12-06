@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="album.css">
+  <body>
+    <script>
+      $(document).ready(function(){
+        $("#img").click(function(){
+          $("#div2").toggle();
+        });
+      });
+    </script>
+    <h3 style="text-align:center">이미지를 클릭하면 설명 toggle!</h3>
+      <div id="div">
+        <div>
+          <img src="glass.jpg" width="500px" id="img">
+        </div>
+        <div id="div2">
+				<div class="discript">
+            2017. 11. 30.  <br><br>
+            2018 가요계를 빛낼 최고의 소녀들! fromis_9 데뷔 선행 싱글 ‘유리구두’ 발매<br />
+  						‘아이돌학교’에서 이제 그룹 ‘fromis_9’으로!<br />
+  						타이틀곡 ‘유리구두’ 간절한 소망의 약속 담아 소녀스러운 풋풋함과 사랑스러운 매력을 발산한다.
+  				</div>
+
+				<ol>
+          <li class="title">
+						<span>01</span>
+						유리구두 (Glass Shoes)
+            <hr>
+					</li>
+				</ol>
+        </div>
+      </div>
+
+
+  </body>
+</html>

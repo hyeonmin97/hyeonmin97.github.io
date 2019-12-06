@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+      input{
+        background:yellow;
+        width:150px;
+        height: 30px;
+        border: 1px solid red;
+      }
+      img{
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //14-17슬라이드
+      $(document).ready(function(){
+        $("#btn").click(function(){
+          $("img").animate({width:"400px"},1000).animate({height:"550px"},1000);//이방법으로도 가능
+          $("img").animate({borderRadius:"50px"},1000);
+        });
+      });
+
+
+
+    </script>
+    <img src="dog3.jpg" width="200">
+    <br><b>밥풀이에요</b><br>
+    <input type="button" id="btn" value="확대하기">
+
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>박지원</title>
+    <link rel="stylesheet" href="3.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <style media="screen">
+    body{
+      text-align: center;
+    }
+    </style>
+    <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("img").animate({width:"90%"},1000);
+        $("tr:even").css("backgroundColor","blue");
+      });
+    });
+
+    </script>
+    <button type="button">테이블 내 위치필터사용</button><br><br>
+    <table width="60%" >
+      <tr>
+        <th colspan="2">박지원 / 朴池原 / Park Jiwon</th>
+      </tr>
+      <tr>
+        <td colspan="2"><img src="jiwon.jpg"></td>
+      </tr>
+      <tr>
+        <td class="left" rowspan="2">출생</td>
+        <td>1998년 3월 20일</td>
+      </tr>
+      <tr>
+        <td>부산광역시 해운대구</td>
+      </tr>
+      <tr>
+        <td class="left">국적</td>
+        <td>대한민국</td>
+      </tr>
+      <tr>
+        <td class="left">신체</td>
+        <td>158cm, 45kg, A형</td>
+      </tr>
+      <tr>
+        <td class="left">소속사</td>
+        <td>오프더레코드 엔터테인먼트</td>
+      </tr>
+      <tr>
+        <td class="left">소속 그룹</td>
+        <td>fromis_9</td>
+      </tr>
+    </table>
+
+  </body>
+</html>

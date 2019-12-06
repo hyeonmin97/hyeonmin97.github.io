@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+      button{
+        width: 100px;
+        height: 30px;
+        border: 1px solid red;
+      }
+      img{
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //18-20슬라이드
+      //id=#
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("#snow").animate({marginLeft:"+=300px"},"slow");//slow, fast, 1초 1000
+          $("#snow").animate({marginLeft:"-=300px"},"slow");
+        });
+        $("#btn2").click(function(){
+          $("img").animate({height:"toggle"},"fast");
+        });
+      });
+
+    </script>
+    <img src="dog5.jpg" id="snow" width="300"><br>
+    <b>한국의 겨울</b>눈이와요<br>
+    <button id="btn1">좌우이동</button>
+    <button id="btn2">이미지 토글</button>
+  </body>
+</html>

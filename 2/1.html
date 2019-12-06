@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        text-align:center;
+        color:white;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function(){
+        $("#button").click(function(){
+          $("div").toggle("slow");
+        });
+      });
+    </script>
+    <button type="button" id="button">Toggle</button>
+    <div>
+    <h2>인사법</h2>
+
+      인사드리겠습니다. 둘, 셋!<br>
+      이제는 약속해 소중히 간직해<br>
+      당신의 아이돌로 성장하겠습니다!<br>
+      안녕하세요, 프로미스나인입니다.<br>
+    </div>
+
+    </body>
+</html>
